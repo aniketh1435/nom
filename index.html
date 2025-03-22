@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sister</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .card {
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 5s ease-in-out;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff4da6;
+            animation: bounceIn 3s ease-in-out;
+        }
+        .balloon {
+            position: absolute;
+            width: 50px;
+            animation: floatUp 6s infinite ease-in-out;
+        }
+        .balloon:nth-child(1) { left: 10%; animation-duration: 7s; }
+        .balloon:nth-child(2) { left: 30%; animation-duration: 5s; }
+        .balloon:nth-child(3) { left: 50%; animation-duration: 6s; }
+        .balloon:nth-child(4) { left: 70%; animation-duration: 7s; }
+        .balloon:nth-child(5) { left: 90%; animation-duration: 5s; }
+        h1, h2, p, h3 {
+            animation: fadeInContent 6s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            60% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-10vh); opacity: 0; }
+        }
+        @keyframes fadeInContent {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" class="balloon" alt="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" class="balloon" alt="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" class="balloon" alt="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" class="balloon" alt="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" class="balloon" alt="balloon">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card animate__animated animate__fadeIn">
+                    <h1 class="text-danger animate__animated animate__rubberBand">Happy Birthday!</h1>
+                    <img src="image/image.jpg" alt="Sister's Photo" class="profile-pic animate__animated animate__bounceIn">
+                    <h2 class="mt-3">Chashmish</h2>
+                    <p class="text-muted">Born on: 31st MARCH 2006</p>
+                    <p class="lead">Wishing you a day filled with love, joy, and all the happiness you bring to everyone!</p>
+                    <h3 class="text-warning animate__animated animate__heartBeat">🎂🎉 Lots of Love! 🎈🎁</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
